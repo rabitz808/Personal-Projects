@@ -6,7 +6,9 @@
 - Vite + React
 - Check it out here https://zippy-gnome-d646d1.netlify.app
 
-2. Poke API
+<br>
+
+2. # Poke API
 
 This is a personal project to create a custom Pokemon API with data from the Ruby, Sapphire, and Emerald games.
 
