@@ -16,18 +16,43 @@ This is a personal project to create a custom Pokemon API with data from the Rub
 
 This API provides data on 202 unique Pokemon from the Ruby, Sapphire, and Emerald games, including their name, picture, Pokedex number, types, weakness, species, and evolutions with the level they evolve.
 
-## Usage
+## Running the Server Locally
 
-To use the API, simply clone the repository and import the `pokemonData` object from the `data.js` file. You can then access the data for any Pokemon by referencing its name as a property of the object.
+To run the Poke API server on your local machine, you will need to have Node.js and npm installed. Follow these steps:
+
+1. Clone the repository to your local machine
+2. Navigate to the `poke-api` directory in your terminal
+3. Run `npm install` to install the necessary dependencies
+4. Run `node server.js` to start the server
+
+The server will be running on `http://localhost:8000/`. You can now make requests to the API using your preferred method (e.g. `fetch()` in JavaScript).
+
+## Usage
+You can then access the data for any Pokemon by referencing its name as a property of the object.
 
 ```javascript
-const pokemonData = require('./data.js');
-
 const bulbasaurData = pokemonData['bulbasaur'];
 console.log(bulbasaurData);
 ```
 
 This will log the following object to the console:
+
+```javascript
+{
+  picture: 'https://img.pokemondb.net/artwork/bulbasaur.jpg',
+  pokedexNo: 1,
+  types: [ 'Grass', 'Poison' ],
+  weakness: [ 'Fire', 'Psychic', 'Flying', 'Ice' ],
+  species: 'Seed Pokémon',
+  evolutions: [
+    { name: 'Bulbasaur', level: 1 },
+    { name: 'Ivysaur', level: 16 },
+    { name: 'Venusaur', level: 32 }
+  ]
+}
+```
+
+Or use this url `http://localhost:8000/api/pokemon-name` to return information about that pokemon. For example typing in `http://localhost:8000/api/bulbasaur` will return:
 
 ```javascript
 {
