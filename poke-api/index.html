@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon API</title>
+  </head>
+  <body>
+    <h1>Using the Pokemon API</h1>
+
+    <p>
+      Welcome to my simple Pokemon API! This API provides information on all 202
+      unique Pokemon from the Ruby, Sapphire, and Emerald games. Below is an
+      example of how to access the data for a specific Pokemon:
+    </p>
+
+    <pre><code>const pokemon = pokemonData["pikachu"];
+console.log(pokemon);</code></pre>
+
+    <p>
+      You may also access the data using /api/pokemon-name. Below is an example
+      of how to access the data for a specific Pokemon:
+    </p>
+
+    <pre><code>localhost:8000/api/pikachu</code></pre>
+
+    <p>
+      This will return an object containing all the data for Pikachu, including
+      its picture, pokedex number, types, weakness, species, and evolutions.
+    </p>
+
+    <p>
+      To use this API in your own projects, simply copy and paste the JavaScript
+      object containing the Pokemon data into your code, or reference it from a
+      separate .js file.
+    </p>
+
+    <p>
+      Please be advised that this API is currently a work in progress, and while
+      efforts have been made to ensure that all information is accurate and
+      up-to-date, some discrepancies may still exist. If you have any questions
+      or feedback regarding this API, please feel free to reach out to me on
+      GitHub. It is important to note that one of the limitations of this API is
+      the 'evolutions' property. If a Pokemon evolves using a specific method
+      such as an evolution stone, rather than reaching a specified level, this
+      property will appear as 'null'.
+    </p>
+  </body>
+</html>
